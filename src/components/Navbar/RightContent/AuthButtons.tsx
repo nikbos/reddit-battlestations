@@ -33,3 +33,4 @@ const AuthButtons: React.FC<AuthButtonsProps> = () => {
   );
 };
 export default AuthButtons;
+
