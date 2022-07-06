@@ -7,12 +7,11 @@ import Layout from "../components/Layout/Layout";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
-
-   <ChakraProvider theme={theme}>
-    <Layout>
-     <Component {...pageProps} />
-    </Layout>
-   </ChakraProvider>
+      <ChakraProvider theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
     </RecoilRoot>
   )
 }
