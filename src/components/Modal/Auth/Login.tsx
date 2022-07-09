@@ -1,5 +1,4 @@
 import { Button, Flex, Input, Text } from "@chakra-ui/react";
-import { prepareServerlessUrl } from "next/dist/server/base-server";
 import React, { useState } from "react";
 import { useSetRecoilState } from "recoil";
 import { authModalState } from "../../../atoms/authModalAtom";
@@ -77,12 +76,12 @@ const Login: React.FC<LoginProps> = () => {
           color="blue.500"
           fontWeight={700}
           cursor="pointer"
-            onClick={() => 
-                setAuthModalState((prev) => ({
+          onClick={() =>
+            setAuthModalState((prev) => ({
               ...prev,
-              view: "login",
+              view: "signup",
             }))
-        }
+          }
         >
           SIGN UP
         </Text>
