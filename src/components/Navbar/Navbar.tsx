@@ -24,7 +24,8 @@ const Navbar: React.FC = () => {
         <Image src="/images/redditFace.svg" height="30px" alt="logo"></Image>
         <Image
           src="/images/redditText.svg"
-          height="46px"
+          height="16px"
+          ml={2}
           display={{ base: "none", md: "unset" }}
           alt="logo"
         ></Image>
