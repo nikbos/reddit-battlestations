@@ -30,6 +30,7 @@ const Navbar: React.FC = () => {
           alt="logo"
         ></Image>
       </Flex>
+      
       <SearchInput />
       <RightContent user={user}/>
     </Flex>

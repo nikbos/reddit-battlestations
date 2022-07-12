@@ -1,17 +1,18 @@
-import { Box, Flex, Icon } from "@chakra-ui/react";
 import React from "react";
+import { AddIcon } from "@chakra-ui/icons";
+import { Box, Flex, Icon } from "@chakra-ui/react";
 import { BsArrowUpRightCircle, BsChatDots } from "react-icons/bs";
 import { GrAdd } from "react-icons/gr";
 import {
   IoFilterCircleOutline,
   IoNotificationsOutline,
-  IoVideocamOutline
+  IoVideocamOutline,
 } from "react-icons/io5";
 
-type ActionIconsProps = {};
 
-const ActionIcons: React.FC<ActionIconsProps> = () => {
-  const { toggleMenuOpen } = useDirectory();
+
+const Icons: React.FC = () => {
+  
   return (
     <Flex alignItems="center" flexGrow={1}>
       <Box
@@ -80,7 +81,7 @@ const ActionIcons: React.FC<ActionIconsProps> = () => {
           cursor="pointer"
           borderRadius={4}
           _hover={{ bg: "gray.200" }}
-          onClick={toggleMenuOpen}
+          
         >
           <Icon as={GrAdd} fontSize={20} />
         </Flex>
@@ -88,4 +89,4 @@ const ActionIcons: React.FC<ActionIconsProps> = () => {
     </Flex>
   );
 };
-export default ActionIcons;
+export default Icons;
