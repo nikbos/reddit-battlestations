@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
       bg="white"
       height="44px"
       padding="6px 12px"
-      justifyContent={{ md: "space-between" }}
+      justify={{ md: "space-between" }}
     >
       <Flex
         align="center"
@@ -31,9 +31,9 @@ const Navbar: React.FC = () => {
           alt="logo"
         ></Image>
       </Flex>
-      <Directory />      
-      <SearchInput />
-      <RightContent user={user}/>
+      {user && <Directory />}      
+      <SearchInput user={user} />
+      <RightContent user={user} />
     </Flex>
   );
 };
